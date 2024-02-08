@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useState } from 'react'
+import Program1 from './components/Program1';
+import Program2 from './components/Program2';
+import Program3 from './components/Program3';
+import Program4 from './components/Program4';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+    {/* <Program1 /> */}
+    {/* <Program2 /> */}
+    {/* <Program3 /> */}
+    <Program4 />
+  </>
 }
 
 export default App;
