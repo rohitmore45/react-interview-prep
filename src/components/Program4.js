@@ -22,15 +22,14 @@ export default function Program4() {
   }
 
   return <>
-    <div style={{ height: 600, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <div style={{ width: 300, height: 120, backgroundColor: 'skyblue', textAlign: 'center', padding: 10 }}>
-
-        <input type='text' onChange={handleInput1} placeholder='Enter first number' style={{ marginBottom: 10, fontSize: 25, width: 200 }} /> <br />
-        <input type='text' onChange={handleInput2} placeholder='Enter second number' style={{ marginBottom: 10, fontSize: 25, width: 200 }} /><br />
-        <button style={{ padding: 8 }} onClick={handleAddition}>Add </button>
+    <div className='d-flex justify-content-center mt-5'>
+      <div className='w-25 text-center p-5  border border-2 rounded'>
+        <input type='text' onChange={handleInput1} placeholder='Enter first number' className='form-control  ' /> <br />
+        <input type='text' onChange={handleInput2} placeholder='Enter second number' className='form-control ' /><br />
+        <button className='btn btn-success' onClick={handleAddition}>Add </button>
       </div>
     </div>
 
-    <h2>Addition is : {addition}</h2>
+    <h2 className='text-center mt-3'>Addition is : {addition}</h2>
   </>
 }
