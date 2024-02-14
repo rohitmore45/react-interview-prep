@@ -45,7 +45,7 @@ export default function Program1() {
     }
   ]
 
-  let [country, setCountry] = useState({ name: '', code: '', cities: [] })
+  let [country, setCountry] = useState()
   return <>
     <select value={country}
       onChange={(event) => {
